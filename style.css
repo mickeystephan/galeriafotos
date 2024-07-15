@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:silver;
+    margin: 0;
+}
+
+.gallery-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+}
+.gallery-container img {
+    width: 100%;
+    display: none;
+}
+.gallery-container img.active {
+    display: block;
+}
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(224, 107, 107, 0.699);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.button.left {
+    left: 10px;
+}
+.button.right {
+    right: 10px;
+}
